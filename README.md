@@ -13,10 +13,10 @@ This project implements a comprehensive vehicle dynamics simulation system consi
 
 ## Team Members
 
-- **Jesús Javier Martínez Hernández** - A00833296
-- **Diego Hilario López Rodriguez** - A00836492
-- **Diego José Roca Rodriguez** - A00836390
-- **Victor Alejandro Meneses Garza** - A01384002
+- **Jesús Javier Martínez Hernández** 
+- **Diego Hilario López Rodriguez** 
+- **Diego José Roca Rodriguez** 
+- **Victor Alejandro Meneses Garza** 
 
 ## System Architecture
 
@@ -295,8 +295,3 @@ For improvements or bug fixes, please contact the team members listed above.
 For questions or issues, contact any of the team members via their institutional email addresses.
 
 ---
-
-**Last Updated**: January 9, 2026
-**Version**: 2.0
-**Course**: Sistemas en Chip (Chip-on-Systems)
-**Institution**: Tecnológico de Monterrey
