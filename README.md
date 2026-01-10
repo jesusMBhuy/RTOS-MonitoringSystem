@@ -2,7 +2,7 @@
 
 A real-time embedded system that simulates a tractor's engine and transmission behavior using an STM32F103 microcontroller with FreeRTOS, interfaced with a Raspberry Pi for data visualization and remote control.
 
-## 📋 Project Overview
+## Project Overview
 
 This project implements a comprehensive vehicle dynamics simulation system consisting of:
 
@@ -11,14 +11,14 @@ This project implements a comprehensive vehicle dynamics simulation system consi
 - **UART Communication**: High-speed serial link between both systems (115200 baud)
 - **Real-time Control**: FreeRTOS-based multitasking with mutex synchronization
 
-## 👥 Team Members
+## Team Members
 
 - **Jesús Javier Martínez Hernández** - A00833296
 - **Diego Hilario López Rodriguez** - A00836492
 - **Diego José Roca Rodriguez** - A00836390
 - **Victor Alejandro Meneses Garza** - A01384002
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -41,7 +41,7 @@ This project implements a comprehensive vehicle dynamics simulation system consi
 └─────────────────────────────────────────────────────────────┘
 ```
 
-## 🔧 Hardware Requirements
+## Hardware Requirements
 
 ### STM32 System
 - **Microcontroller**: STM32F103RBT6 (128KB Flash, 20KB RAM)
@@ -65,7 +65,7 @@ This project implements a comprehensive vehicle dynamics simulation system consi
 - Potentiometer (throttle input)
 - LEDs for turn signal indicators
 
-## 📦 Software Dependencies
+## Software Dependencies
 
 ### STM32 Firmware
 - STM32CubeIDE (v1.x or later)
@@ -78,7 +78,7 @@ This project implements a comprehensive vehicle dynamics simulation system consi
 pip install pyserial numpy pyqtgraph PyQt5
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. STM32 Firmware Setup
 
@@ -118,7 +118,7 @@ sudo raspi-config
 python3 rasp_data_monitor.py
 ```
 
-## 📊 System Features
+## System Features
 
 ### Engine & Transmission Model
 The system uses a **Simulink-generated model** (`EngTrModel`) that simulates:
@@ -168,7 +168,7 @@ The Raspberry Pi displays 4 synchronized graphs:
 
 Data is also logged to `DATOS_EV2.csv` with timestamps.
 
-## 🔄 FreeRTOS Task Scheduling
+## FreeRTOS Task Scheduling
 
 | Task | Priority | Stack | Period | Function |
 |------|----------|-------|--------|----------|
@@ -179,7 +179,7 @@ Data is also logged to `DATOS_EV2.csv` with timestamps.
 
 **Synchronization**: Mutex `Mutex1Handle` protects LCD access between Task2 and Task4.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Tractor_Engine_Simulation_System/
@@ -218,7 +218,7 @@ Tractor_Engine_Simulation_System/
     └── rasp_data_monitor.py           # Main Python application
 ```
 
-## 🛠️ Customization
+## Customization
 
 ### Modifying the Engine Model
 The engine/transmission model is generated from Simulink. To modify:
@@ -243,7 +243,7 @@ osDelay(582);  // Task4: Display refresh rate
 ser = serial.Serial("/dev/ttyAMA0", baudrate=115200, ...)
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### STM32 Issues
 
@@ -274,7 +274,7 @@ ser = serial.Serial("/dev/ttyAMA0", baudrate=115200, ...)
 **Problem**: Graph not updating
 - **Solution**: Ensure PyQtGraph timer is running and data format matches expected pattern
 
-## 📈 Performance Metrics
+## Performance Metrics
 
 - **ADC Sampling**: 30 Hz (33ms period)
 - **Control Loop**: 5 Hz (200ms period)
@@ -282,15 +282,15 @@ ser = serial.Serial("/dev/ttyAMA0", baudrate=115200, ...)
 - **Display Update**: ~1.72 Hz (582ms period)
 - **CPU Usage**: ~40-60% (estimated, with all tasks running)
 
-## 📝 License
+## License
 
 This project was developed as part of a university course. Please check with the original authors for licensing information.
 
-## 🤝 Contributing
+## Contributing
 
 For improvements or bug fixes, please contact the team members listed above.
 
-## 📞 Support
+## Support
 
 For questions or issues, contact any of the team members via their institutional email addresses.
 
