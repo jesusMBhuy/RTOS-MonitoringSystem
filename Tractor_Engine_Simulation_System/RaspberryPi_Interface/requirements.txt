@@ -1,0 +1,7 @@
+# Python Dependencies for Raspberry Pi Interface
+# Install with: pip install -r requirements.txt
+
+pyserial>=3.5
+numpy>=1.21.0
+pyqtgraph>=0.12.0
+PyQt5>=5.15.0

@@ -1,0 +1,95 @@
+# ============================================
+# STM32 / Embedded Development
+# ============================================
+
+# Build outputs
+Debug/
+Release/
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+*.o
+*.d
+*.su
+*.cyclo
+
+# STM32CubeIDE specific
+.metadata/
+.settings/
+.cproject
+.project
+*.launch
+
+# Generated makefiles and build artifacts
+objects.list
+objects.mk
+sources.mk
+makefile
+
+# ============================================
+# Python / Raspberry Pi
+# ============================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# PyQt cache
+*.pyc
+
+# CSV data files (generated at runtime)
+*.csv
+DATOS_*.csv
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ============================================
+# System Files
+# ============================================
+
+# Windows
+Thumbs.db
+Desktop.ini
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# ============================================
+# Project Specific
+# ============================================
+
+# STM32 HAL and CMSIS libraries (keep in repo but ignore local modifications)
+# Uncomment if you want to ignore these:
+# Drivers/CMSIS/
+# Drivers/STM32F1xx_HAL_Driver/
+# Middlewares/Third_Party/FreeRTOS/
+
+# Old project folders (if cleanup not complete)
+EQ3_EvidenciaFinal/
+Códigos*Raspberry*Pi/
+
+# Backup files
+*.bak
+*.old
+*.backup
